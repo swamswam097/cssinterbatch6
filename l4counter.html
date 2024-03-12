@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+	<style type="text/css">
+
+    body{ 
+    	counter-reset: idx;
+     }
+
+	h2::before{ 
+		counter-increment: idx;
+
+/*		counter:counter(idx);*/
+		content:"Section "counter(idx)" : ";
+	 }
+
+	h2{ 
+		counter-reset: gay;
+	 }
+
+	h3::before{ 
+		counter-increment: gay;
+/*		content: counter(gay);*/
+        content: "Lesson :"counter(idx)"."counter(gay);
+	 }
+	</style>
+</head>
+<body>
+
+	<h1>DLT Lessons</h1>
+
+	<h2>Web Development Foundation</h2>
+	<h3>html</h3>
+	<h3>css</h3>
+	<h3>javascript</h3>
+	<h3>bootstrap</h3>
+	<h3>github</h3>
+
+	<h2>CSS Class</h2>
+	<h3>css intermediate</h3>
+	<h3>bootstrap</h3>
+	<h3>tailwind css</h3>
+
+	<h2>Javascript Class</h2>
+	<h3>jquery</h3>
+	<h3>javascript es6</h3>
+	<h3>reactjs</h3>
+	<h3>nodejs</h3>
+
+	<h2>Database Class</h2>
+	<h3>mysql</h3>
+	<h3>mongo db</h3>
+
+	<h3>PHP Class</h3>
+	<h3>php oop</h3>
+	<h3>laravel</h3>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition Effect</title>
+	<style type="text/css"> 
+		.container{ 
+			width: 1200px;
+			background-color: gray;
+
+/*			rem(root element's font size)*/
+/*			1rem = 16px*/
+/*			margin: 3rem 0;*/
+            margin: 48px 0;
+
+		 }
+
+		.container .square{ 
+			width: 150px;
+			height: 70px;
+			background-color: red;
+			color: #fff;
+			font-size: 20px;
+
+			text-align: center;
+			line-height: 50px;
+
+			border-radius: 3px;
+
+			transition-property: transform ;
+		    transition-duration: .5s;
+		    transition-timing-function: linear;
+		 }
+
+		#scale:hover{ 
+/*			scale(anglexy)*/
+/*			transform: scale(0);*/
+/*			transform: scale(1);*/
+/*			transform: scale(1.5);*/
+			transform: scale(2);
+
+		 }
+
+		#scalexy:hover{ 
+/*			scale(x,y)*/
+/*			transform: scale(1,2);*/
+/*			transform: scale(2,1);*/
+			transform: scale(2,3);
+		 }
+
+		#scalex:hover{ 
+/*			scaleY(angley)*/
+/*			transform: scale(0.5);*/
+			transform: scale(2);
+		 }
+
+		#scaley:hover{ 
+/*			scaleY(angley)*/
+/*			transform: scale(0.5);*/
+			transform: scale(2);
+		 }
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container"> 
+		<div id="scale" class="square">DIV1 1 XY</div>
+	</div>
+
+	<div class="container"> 
+		<div id="scalexy" class="square">DIV1 2 X,Y</div>
+	</div>
+
+	<div class="container"> 
+		<div id="scalex" class="square">DIV1 3 X</div>
+	</div>
+
+	<div class="container"> 
+		<div id="scaley" class="square">DIV1 3 Y</div>
+	</div>
+
+</body>
+</html>
+
+<!-- 2TS -->
+
+<!-- transform: scale(0); = default -->
+
