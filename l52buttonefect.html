@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Effect</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style type="text/css"> 
+	 body {
+                font-family: sans-serif;
+                height: 100vh;
+                background-color: #000;
+               
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+     }
+
+    .btn {
+                background: linear-gradient(200deg,skyblue,pink);
+                font-size: 40px;
+                border: none;
+                border-radius: 40px;
+                cursor: pointer;
+                padding: 20px;
+
+                position: relative;
+
+                transition: all .3s;
+
+
+                
+     }
+
+    .btn::after{ 
+        content: "10% off";
+        background-color: orange;
+        font-size: 16px;
+        border-radius: 25px;
+        padding: 5px;
+
+        position: absolute;
+        right: 10px;
+        top:-10px;
+
+        transition: all .5s;
+     }
+
+    .btn:hover::after{ 
+        background-color: darkred;
+        color: #fff;
+
+     }
+
+    .btn:hover{ 
+         background: linear-gradient(100deg,pink,skyblue);
+         box-shadow: -6px -4px 114px 114px hotpink;
+     }
+
+    
+
+
+    
+
+    
+
+       
+
+
+     
+
+
+
+        
+
+            
+
+	</style>
+</head>
+<body>
+
+	<button type="button" class="btn">Add To Cart</button>
+
+</body>
+</html>
+
+<!-- 24BT -->

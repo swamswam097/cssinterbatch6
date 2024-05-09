@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Effect</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css"> 
+
+		body{ 
+			font-family: sans-serif;
+			height: 100Vh;
+			background-color: #444;
+			
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		 }
+
+		.btn{ 
+			background: none;
+			color: #fff;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: none;
+
+			padding: 25px 80px;
+			margin: 0 20px;
+
+			cursor: pointer;
+			position: relative;
+
+		 }
+
+		.download-btn{ 
+			background-color: steelblue;
+		 }
+
+		.upload-btn{
+			 background-color: violet;
+		}
+
+	    .btn::before{ 
+	    	content: "";
+
+	    	width: 60px;
+	    	height: 100%;
+/*	    	background-color: green;*/
+	    	font-size: 150%;
+	    	line-height: 3;
+
+	    	position: absolute;
+	    	left: 0;
+	    	top: 0;
+
+
+	     }
+
+	    .download-btn::before{ 
+	    	content: "\f019";
+	    	font-family: "Font Awesome 5 Free";
+	    	background-color: skyblue;
+	     }
+
+	     .upload-btn::before{ 
+	     	content: "\f093";
+	     	font-family: "Font Awesome 5 Free";
+	    	background-color: blueviolet;
+	     }
+
+	     .download-btn:hover{ 
+	    	background-color: deepskyblue;
+	     }
+
+	    .upload-btn:hover{ 
+	    	background-color: royalblue;
+	     }
+
+	     .download-btn:active{ 
+	    	background-color:  blue;
+	     }
+
+	    .upload-btn:active{ 
+	    	background-color: pink;
+	     }
+
+		
+
+		
+
+		
+		
+
+
+		
+
+		
+
+
+		 
+
+		
+
+		
+
+		
+
+		
+	</style>
+</head>
+<body>
+
+	<button type="button" class="btn download-btn">Download Button</button>
+	<button type="button" class="btn upload-btn">Upload Button</button>
+
+
+</body>
+</html>
+
+<!-- 6HM -->
